@@ -26,7 +26,6 @@ def fake_commit():
     git('push')
 
 def ask_today_commit():
-    return False
     contributions_json = requests.get(url_tpl % timestamp).json()
     if contributions_json:
         if contributions_json[-1][1]:
