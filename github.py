@@ -41,6 +41,6 @@ if not has_contributed:
     print 'i am going to fake commit'
     try:
         fake_commit()
-    except e:
+    except Exception as e:
         print e
         # and email me
