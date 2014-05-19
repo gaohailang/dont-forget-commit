@@ -23,7 +23,7 @@ def fake_commit():
     x.close()
     git('add','.')
     git('commit','-m','fake commit at '+get_todaystr())
-    git('push')
+    git('push','-f')
 
 def ask_today_commit():
     contributions_json = requests.get(url_tpl % timestamp).json()
