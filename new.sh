@@ -4,7 +4,7 @@
 # @Last Modified by:   gaohailang
 # @Last Modified time: 2016-05-03 17:07:29
 
-for i in {1..20}
+for i in {1..140}
 do
   echo $i
   dateOpt="$i day ago"
